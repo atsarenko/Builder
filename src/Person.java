@@ -1,19 +1,19 @@
 
 public class Person {
 
-    private String userId;
-    private String token;
+    private String name;
+    private Integer age;
 
     private Person() {
         // private constructor
     }
 
-    public String getUserId() {
-        return userId;
+    public String getName() {
+        return name;
     }
 
-    public String getToken() {
-        return token;
+    public Integer getAge() {
+        return age;
     }
 
     public static Builder newBuilder() {
@@ -26,14 +26,14 @@ public class Person {
             // private constructor
         }
 
-        public Builder setUserId(String userId) {
-            Person.this.userId = userId;
+        public Builder setName(String name) {
+            Person.this.name = name;
 
             return this;
         }
 
-        public Builder setToken(String token) {
-            Person.this.token = token;
+        public Builder setAge(Integer age) {
+            Person.this.age = age;
 
             return this;
         }
