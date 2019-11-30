@@ -4,7 +4,7 @@ public class Main {
 
         Person person = Person.newBuilder()
                 .setName("Aleksey")
-                .setAge(44)
+                .setAge(22)
                 .build();
 
         System.out.println(person.getName());
