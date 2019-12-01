@@ -1,13 +1,18 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
+        ArrayList<Person> persons  = new ArrayList<>();
 
-        Person person = Person.newBuilder()
-                .setName("Aleksey")
-                .setAge(22)
-                .build();
+        for (int i = 0; i < 3; i++) {
+            int ageTmp = 10 * i + 5;
+            persons.add(Person.newBuilder().setName("Person").setAge(ageTmp).build());
+        }
 
-        System.out.println(person.getName());
-        System.out.println(person.getAge());
+        for (Person person:persons) {
+            System.out.println(person.getName());
+            System.out.println(person.getAge());
+        }
     }
 }
